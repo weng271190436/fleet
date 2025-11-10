@@ -64,7 +64,6 @@ spec:
             - --leader-elect=true
             - --v={{ .Values.logVerbosity }}
             - -add_dir_header
-            - --enable-v1alpha1-apis={{ .Values.enableV1Alpha1APIs }}
             - --enable-v1beta1-apis={{ .Values.enableV1Beta1APIs }}
             {{- if .Values.propertyProvider }}
             - --property-provider={{ .Values.propertyProvider }}
